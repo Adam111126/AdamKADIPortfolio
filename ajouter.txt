@@ -1,2 +1,3 @@
 afficher les 6 branches du BUT 2 cliquable pour mettre en valeur nos compétences (ajouter des projets)
 ajouter des icônes/images pour les outils/langages etc...
+ajouter une rubrique Langages de programmation et séparer compétences et connaissances
