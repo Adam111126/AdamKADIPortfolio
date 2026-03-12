@@ -1,347 +1,366 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Adam KADI</title>
-    <link rel="stylesheet" href="Portfolio.css">
+    <meta name="description" content="Portfolio one-page d'Adam Kadi, étudiant en BUT Informatique, structuré autour des compétences du BUT et de projets techniques.">
+    <title>Adam Kadi | Portfolio BUT Informatique</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav>
-        <div class="container">
-            <ul>
-		
-                <li><a href="#accueil">Accueil</a></li>
-                <li><a href="#table-matieres">Sommaire</a></li>
-		<li><a href="#mission">Présentation</a></li>
-                <li><a href="#introduction">Introduction</a></li>
-                <li><a href="#objectif">Objectif</a></li>
-        
-                <li><a href="#cv">CV</a></li>
-                <li><a href="#competences">Compétences</a></li>
-                <li><a href="#projets">Projets</a></li>
-		<li><a href="#contact">Contact</a></li>
-            </ul>
+    <a class="skip-link" href="#main-content">Aller au contenu</a>
+
+    <nav class="site-nav" aria-label="Navigation principale">
+        <div class="container nav-inner">
+            <a class="brand" href="#hero">
+                <span class="brand-mark">AK</span>
+                <span class="brand-copy">
+                    <strong>Adam Kadi</strong>
+                    <span>BUT Informatique</span>
+                </span>
+            </a>
+
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-panel">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span class="sr-only">Ouvrir le menu</span>
+            </button>
+
+            <div class="nav-panel" id="nav-panel">
+                <ul class="nav-links">
+                    <li><a href="#hero" data-nav-link>Accueil</a></li>
+                    <li><a href="#presentation" data-nav-link>Présentation</a></li>
+                    <li><a href="#connaissances" data-nav-link>Connaissances</a></li>
+                    <li><a href="#cv" data-nav-link>CV</a></li>
+                    <li class="nav-item nav-item-dropdown" data-nav-group="competences">
+                        <div class="nav-dropdown-head">
+                            <a href="#competences" class="nav-group-link" data-nav-link data-nav-parent-link="competences">Compétences</a>
+                            <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="nav-competences-menu" data-dropdown-toggle="competences">
+                                <span class="nav-dropdown-chevron" aria-hidden="true"></span>
+                                <span class="sr-only">Afficher les liens des compétences</span>
+                            </button>
+                        </div>
+                        <div class="nav-dropdown-menu" id="nav-competences-menu">
+                            <a href="#realiser" data-nav-link data-nav-sub-link="competences">Réaliser</a>
+                            <a href="#optimiser" data-nav-link data-nav-sub-link="competences">Optimiser</a>
+                            <a href="#administrer" data-nav-link data-nav-sub-link="competences">Administrer</a>
+                            <a href="#gerer" data-nav-link data-nav-sub-link="competences">Gérer</a>
+                            <a href="#conduire" data-nav-link data-nav-sub-link="competences">Conduire</a>
+                            <a href="#collaborer" data-nav-link data-nav-sub-link="competences">Collaborer</a>
+                        </div>
+                    </li>
+                    <li><a href="#sae-techniques" data-nav-link>TP / mini-projet</a></li>
+                    <li><a href="#projet-phare" data-nav-link>Projet phare</a></li>
+                    <li><a href="#contact" data-nav-link>Contact</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
 
-    <!-- Page Titre -->
-    <section id="accueil" class="hero">
-        <div class="organic-shape shape-1"></div>
-        <div class="organic-shape shape-2"></div>
-        <div class="organic-shape shape-3"></div>
-        
-        <div class="hero-content">
-            <h1>&nbsp;BUT INFO</h1>
-            <div class="subtitle">PORTFOLIO</div>
-            <div class="year">2025</div>
-            <div class="name">ADAM KADI</div>
-        </div>
-    </section>
-
-    <!-- Table des Matières -->
-    <section id="table-matieres">
-        <div class="container">
-            <div class="section-header">
-                <h2>Table des Matières</h2>
-            </div>
-            
-            <div class="toc-grid">
-                <div class="toc-item" onclick="document.getElementById('introduction').scrollIntoView()">
-                    <h3>Introduction</h3>
-                    <p>Bienvenue sur mon portfolio</p>
-                </div>
-                
-                <div class="toc-item" onclick="document.getElementById('objectif').scrollIntoView()">
-                    <h3>Objectif Professionnel</h3>
-                    <p>Mes objectifs pour la suite de mes études</p>
-                </div>
-                
-                <div class="toc-item" onclick="document.getElementById('mission').scrollIntoView()">
-                    <h3>Énoncé de Mission</h3>
-                    <p>Mes valeurs personnelles et mon éthique de travail</p>
-                </div>
-                
-                <div class="toc-item" onclick="document.getElementById('cv').scrollIntoView()">
-                    <h3>Curriculum Vitæ</h3>
-                    <p>Mon parcours professionnel et mes expériences</p>
-                </div>
-                
-                <div class="toc-item" onclick="document.getElementById('competences').scrollIntoView()">
-                    <h3>Profil de Compétences</h3>
-                    <p>Mes capacités techniques et relationnelles</p>
-                </div>
-                
-                <div class="toc-item" onclick="document.getElementById('projets').scrollIntoView()">
-                    <h3>Projets Académiques</h3>
-                    <p>Réalisations et travaux effectués durant ma formation</p>
-                </div>
-		<div class="toc-item" onclick="document.getElementById('contact').scrollIntoView()">
-    		    <h3>Contact</h3>
-                    <p>Mes coordonnées et moyens de me joindre</p>
-		</div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Introduction -->
-    <section id="introduction">
-        <div class="container">
-            <div class="section-header">
-                <h2>Introduction</h2>
-            </div>
-            
-            <div class="content-card">
-                
-                <p>
-Bienvenue dans mon portfolio ! Je suis Adam KADI, étudiant passionné en deuxième année de BUT Informatique à l'Université Gustave Eiffel. Ce portfolio est bien plus qu'une simple vitrine académique : c'est le reflet de mon parcours, de mes ambitions et de ma vision de l'informatique.
-Au fil de ces années universitaires, j'ai découvert les multiples facettes de l'informatique, depuis la programmation algorithmique jusqu'au développement web collaboratif. Chaque projet réalisé, chaque défi relevé et chaque compétence acquise témoignent de ma détermination à m'améliorer dans ce domaine.
-Cette présentation vous invite à explorer mon univers professionnel en devenir : mes réalisations concrètes, mes compétences techniques et relationnelles, ainsi que ma vision claire de l'avenir. Vous y découvrirez un étudiant motivé, curieux et persévérant, animé par une passion authentique pour les nouvelles technologies et une ambition ferme d'intégrer les plus grandes entreprises tech mondiales.
-                </p>
-                
-            </div>
-        </div>
-    </section>
-
-    <!-- Objectif Professionnel -->
-    <section id="objectif">
-        <div class="container">
-            <div class="section-header">
-                <h2>Objectif Professionnel</h2>
-            </div>
-            
-            <div class="content-card">
-                <h3 class="job-title">Ingénieur logiciel</h3>
-                
-                <p>
-                    Mon objectif professionnel est de pouvoir acquérir les compétences et savoirs nécessaire afin de devenir ingénieur logiciel. Devenir ingénieur logiciel offre une opportunité unique de créer des solutions concrètes aux défis du monde moderne. Ce metier m'intéresse car que ce soit une application qui simplifie la vie quotidienne de millions d'utilisateurs ou un système qui optimise des processus complexes notre objectif est de faciliter la vie d'autrui.
-                </p>
-                
-                <div class="objectives-section">
-                    <h4>Ambitions à court terme (2025-2027) :</h4>
-                    <ul class="custom-list">
-                        <li>Développer mes compétences dans les langages informatiques</li>
-                      
-                        <li>Rejoindre une école d'ingénieur</li>
-                    </ul>
-                </div>
-                
-                <div class="objectives-section">
-                    <h4>Vision à long terme (2027-2030) :</h4>
-                    <ul class="custom-list">
-                        <li>Travailler dans de grandes entreprises de la tech</li>
-                        <li>Devenir chef de projet</li>
+    <header class="hero-shell" id="hero" data-nav-section>
+        <div class="hero-backdrop" aria-hidden="true"></div>
+        <div class="container hero-grid reveal">
+            <div class="hero-copy">
+                <p class="eyebrow">Portfolio étudiant • BUT Informatique • Développement logiciel & web</p>
+                <div class="hero-identity">
+                    <div class="hero-title-block">
+                        <h1>Adam Kadi</h1>
+                        <p class="hero-role">BUT Informatique • Développement logiciel, web et projets techniques</p>
+                    </div>
+                    <div class="hero-photo-card">
                         
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Présentation -->
-    <section id="mission">
-        <div class="container">
-            <div class="section-header">
-                <h2>En savoir plus sur moi</h2>
-            </div>
-                <h3>Qui je suis</h3>
-                <p>
-                    Je suis un étduiant en BUT informatique passioné par les nouvelles technologies qui rêve d'intégrer les plus grandes entreprises de la tech telles que Google, Meta ou bien OpenAI. Je suis quelqu'un de motivé qui aime rendre service et trouver des solutions à des problèmes. En dehors de l'école je suis un passioné de sport et plus particulièrement de basketball qui m'a permis d'acquérir une éthique de travail et à être discipliné.
-                
-                <h3>Mes qualités personnelles</h3>
-                <div class="qualities-grid">
-                    <div class="quality-item">
-                        <strong>Motivé</strong><br>
-                        Je suis un élément très proactif qui cherche tout le temps à s'occuper et à finir ses tâches dans les délais et avec soins
-                    </div>
-                    <div class="quality-item">
-                        <strong>Curiosité</strong><br>
-                        Je m'intéresse à beacoup de domaine ce qui me permet de trouver des solutions dans certains domaines en utilisant d'autres
-                    </div>
-                    <div class="quality-item">
-                        <strong>Persévérance</strong><br>
-                        Détermination face aux défis techniques les plus complexes
-                    </div>
-                    <div class="quality-item">
-                        <strong>Adaptabilité</strong><br>
-                        Flexibilité pour évoluer avec les nouvelles technologies et au sein d'une équipe
+                        <div class="hero-photo-frame">
+                            <img class="hero-photo-image" src="photopro.jpg" alt="Photo professionnelle d'Adam Kadi">
+                        </div>
+                        
                     </div>
                 </div>
-                
-                <h3>Mon éthique de travail</h3>
-                <p>
-                    Mon approche professionnelle repose sur le travail, l'intégrité et la collaboration. Je crois fermement 
-                    que chaque projet mérite un investissement total et une attention méticuleuse aux détails. 
-                    Ma philosophie de travail privilégie l'écoute active et la planification.
+                <p class="hero-lead">
+                    Je construis des projets web, logiciels et techniques en cherchant un point d'équilibre entre code propre,
+                    logique métier claire et travail d'équipe efficace.
                 </p>
-                
-               
+                <div class="hero-actions">
+                    <a class="button button-primary" href="#connaissances">Mes connaissances</a>
+                    <a class="button button-secondary" href="#competences">Mes compétences</a>
+                    <a class="button button-secondary" href="#cv">Voir le CV</a>
+                </div>
+                <ul class="hero-points">
+                    <li><strong data-count="projects">0</strong> projets valorisés</li>
+                    <li><strong data-count="competencies">0</strong> compétences BUT structurées</li>
+                    <li>Front, back, algorithmique, base de données et gestion de projet</li>
+                </ul>
             </div>
-        </div>
-    </section>
 
-<!-- Curriculum Vitæ -->
-<section id="cv">
-    <div class="container">
-        <div class="section-header">
-            <h2>Curriculum Vitæ</h2>
-        </div>
-        
-        <div class="content-card" style="text-align: center;">
-            <img src="CVADAM.png" alt="CV" width="500" height="700" title="Mon CV professionnel">
-            
-            <br><br>
-            <a href="CVADAM.pdf" download="CVADAM.pdf" class="download-btn" target="_blank" rel="noopener">
-    <span class="download-icon">📄</span>
-    Télécharger mon CV
-</a>
-            </a>
-        </div>
-    </div>
-</section>
-    </section>
-
-    <!-- Profil de Compétences -->
-    <section id="competences">
-        <div class="container">
-            <div class="section-header">
-                <h2>Profil de Compétences</h2>
-            </div>
-            
-            <div class="skills-grid">
-                <div class="skill-item">
-                    <h4>Travail d'Équipe</h4>
-                    <p>Leadership, collaboration, gestion des problèmes constructive, et création d'une dynamique de groupe positive au sein d'un groupe de travail.</p>
-                </div>
-                
-                <div class="skill-item">
-                    <h4>Compétences Organisationnelles</h4>
-                    <p>Planification de projets complexes, gestion multi-tâches efficace, respect des délais, et coordination de ressources diverses.</p>
-                </div>
-                
-                <div class="skill-item">
-                    <h4>Capacité de Raisonnement</h4>
-                    <p>Analyse critique, pensée stratégique et adaptabilité face aux contraintes.</p>
-                </div>
-                
-            
-            <div class="content-card technical-skills">
-                <h3>Compétences Techniques Spécialisées</h3>
-                
-                <div class="tech-skills-grid">
-                    <div>
-                        <h4>Logiciels Maîtrisés</h4>
+            <aside class="hero-panel">
+                <p class="panel-title">Plus sur moi</p>
+                <div class="hero-card-stack">
+                    <article class="hero-mini-card">
+                        <span class="mini-label"></span>
+                        <h2>Bienvenue dans mon portfolio. </h2>
+                        <p>Je suis Adam KADI, étudiant en deuxième année de BUT Informatique à l’Université Gustave Eiffel. Ce portfolio reflète mon parcours, mes projets et les compétences que j’ai développées au fil de ma formation. À travers mes réalisations, vous découvrirez ma passion pour l’informatique, mon intérêt pour les nouvelles technologies et ma volonté de progresser afin de construire une carrière dans le domaine du développement et de la tech..</p>
+                    </article>
+                    <article class="hero-mini-card">
+                        <span class="mini-label"></span>
+                        <h2>Ici vous retrouverez :</h2>
                         <ul>
-                            <li> Figma </li>
-                            <li> Visual Studio Code</li>
-                            <li> Eclipse</li>
-                            <li> Canva</li>
-                            <li> Gantt Project</li>
+                            <li>Une présentation de mon profil</li>
+                            <li>Mes projets universitaires</li>
+                            <li>Mes compétences</li>
                         </ul>
+                    </article>
+                </div>
+            </aside>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <noscript>
+            <section class="noscript-warning">
+                <div class="container">
+                    <p>Ce portfolio utilise JavaScript pour générer les cartes projets et les sections compétences.</p>
+                </div>
+            </section>
+        </noscript>
+
+        <section class="section intro-section" id="presentation" data-nav-section>
+            <div class="container section-grid reveal">
+                <div class="section-heading">
+                    <p class="section-kicker">À propos</p>
+                    <h2>Pourquoi je fais de l'informatique et ce que je cherche à construire</h2>
+                </div>
+                <div class="intro-content">
+                    <p>
+                        Je suis étudiant en BUT Informatique à l'Université Gustave Eiffel et je me suis orienté vers l'informatique
+                        parce que j'aime comprendre comment fonctionnent les systèmes, résoudre des problèmes concrets et transformer
+                        des idées en outils utiles. Ce qui me motive le plus, c'est le fait de pouvoir construire des applications,
+                        améliorer une solution existante et apprendre en continu sur des sujets à la fois techniques et pratiques.
+                    </p>
+                    <div class="info-grid">
+                        <article class="info-card">
+                            <span class="info-card-label">Pourquoi l'informatique</span>
+                            <h3>Créer des solutions utiles</h3>
+                            <p>J'apprécie l'informatique parce qu'elle permet de passer d'un besoin réel à une solution concrète, structurée et utilisable.</p>
+                        </article>
+                        <article class="info-card">
+                            <span class="info-card-label">Ce qui me motive</span>
+                            <h3>Développer et progresser</h3>
+                            <p>Je prends autant de plaisir à développer des applications qu'à comprendre les choix techniques, l'algorithmique et le travail d'équipe.</p>
+                        </article>
+                        <article class="info-card">
+                            <span class="info-card-label">Ma démarche</span>
+                            <h3>Rigueur et curiosité</h3>
+                            <p>Je cherche à avancer avec une base propre, des projets concrets et une vraie volonté de monter en niveau vers un profil développeur solide.</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section knowledge-section" id="connaissances" data-nav-section>
+            <div class="container section-grid reveal">
+                <div class="section-heading">
+                    <p class="section-kicker">Connaissances</p>
+                    <h2>Langages, langues et outils que j'utilise au quotidien</h2>
+                    <p class="section-subtitle">
+                        Cette section donne une vue rapide de mes bases techniques, de mes langues de travail et des outils que je mobilise en cours et en projet.
+                    </p>
+                </div>
+                <div class="info-grid knowledge-grid">
+                    <article class="info-card knowledge-card">
+                        <span class="info-card-label">Langages</span>
+                        <h3>Développement et données</h3>
+                        <p>Les langages que j'ai déjà pratiqués dans mes projets web, logiciels et techniques.</p>
+                        <div class="badge-row">
+                            <span class="badge skill">HTML</span>
+                            <span class="badge skill">CSS</span>
+                            <span class="badge skill">JavaScript</span>
+                            <span class="badge skill">PHP</span>
+                            <span class="badge skill">React.js</span>
+                            <span class="badge skill">Node.js</span>
+                            <span class="badge skill">Python</span>
+                            <span class="badge skill">Java</span>
+                            <span class="badge skill">C</span>
+                            <span class="badge skill">SQL / NoSQL</span>
+                            
+                        </div>
+                    </article>
+                    <article class="info-card knowledge-card">
+                        <span class="info-card-label">Langues</span>
+                        <h3>Communication</h3>
+                        <p>Des langues utiles pour les présentations, le travail en équipe et la lecture de ressources techniques.</p>
+                        <div class="badge-row">
+                            <span class="badge skill">Français (native)</span>
+                            <span class="badge skill">Anglais (C1)</span>
+                            <span class="badge skill">Espagnol (B2)</span>
+                            <span class="badge skill">Arabe (B1)</span>
+                            
+                        </div>
+                    </article>
+                    <article class="info-card knowledge-card">
+                        <span class="info-card-label">Outils</span>
+                        <h3>Environnement de travail</h3>
+                        <p>Les outils que j'utilise pour coder, organiser les projets, prototyper et collaborer efficacement.</p>
+                        <div class="badge-row">
+                            <span class="badge skill">Visual Studio Code</span>
+                            <span class="badge skill">Eclipse</span>
+                            <span class="badge skill">IntelliJ</span>
+                            <span class="badge skill">GitHub</span>
+                            <span class="badge skill">Jira</span>
+                            <span class="badge skill">Discord</span>
+                            <span class="badge skill">Figma</span>
+                            <span class="badge skill">Gantt Project</span>
+                            <span class="badge skill">Windows</span>
+                            <span class="badge skill">Linux</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section cv-section" id="cv" data-nav-section>
+            <div class="container reveal">
+                <div class="section-heading section-heading-split">
+                    <div>
+                        <p class="section-kicker">CV</p>
+                        <h2>Un aperçu direct de mon profil académique et technique</h2>
                     </div>
                     
-                    <div>
-                        <h4>Langues</h4>
-                        <ul>
-                            <li> Français (Natif)</li>
-                            <li> Anglais (Courant)</li>
-                            <li> Espagnol (Intermédiaire)</li>
+                </div>
+                <div class="cv-grid">
+                    <article class="cv-summary-card">
+                        <span class="competency-count">Curriculum Vitae</span>
+                        <h3>CV orienté développement</h3>
+                        <p>
+                            Cette zone permet de consulter rapidement mon CV sans quitter la page, puis de télécharger la version PDF
+                            pour un rendu universitaire ou un échange plus professionnel.
+                        </p>
+                        <ul class="feature-list">
+                            <li>formation BUT Informatique</li>
+                            <li>outils, langages et projets clés</li>
+                            <li>version PDF prête à être partagée</li>
                         </ul>
-                    </div>
-                    
-               </div>
+                        <div class="cv-actions">
+                            <a class="button button-primary" href="CVADAM.pdf" download="CVADAM.pdf">Télécharger le CV</a>
+                            <a class="button button-surface" href="CVADAM.pdf" target="_blank" rel="noopener">Ouvrir le PDF</a>
+                        </div>
+                    </article>
+                    <article class="cv-preview-card">
+                        <img src="CVADAM.png" alt="Aperçu du CV d'Adam Kadi">
+                    </article>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Projets vus en cours -->
-    <section id="projets">
-        <div class="container">
-            <div class="section-header">
-                <h2>Projets Académiques</h2>
+        <section class="section competencies-overview-section" id="competences" data-nav-section>
+            <div class="container reveal">
+                <div class="section-heading">
+                    <p class="section-kicker">Compétences</p>
+                    <h2>Les six axes du BUT, reliés à des projets et à des apprentissages concrets</h2>
+                    <p class="section-subtitle">
+                        Cette vue d'ensemble sert de point d'entrée. Les sections suivantes détaillent chaque compétence avec ses projets.
+                    </p>
+                </div>
+                <div class="competency-overview-grid" id="competencies-overview"></div>
             </div>
-            
-            <div class="projects-grid">
-                <div class="project-card">
-                    <h3><strong>Projet d'algorithmie</strong> </h3>
-                    <p><strong>Titre :</strong> Tetris</p>
-		    <p><strong>Équipe :</strong> 2 étudiants</p>
-                    <p><strong>Objectif :</strong> Recréer le fameux jeu de blocs Tetris en langage Python.</p>
-                    <p><strong>Réalisation :</strong> Utilisation du langage Python anisi que la bibliothèque graphique FLTK.</p>
-<br>
-		    <img src="imageTetris.png" alt="Tetris recréé" width="200" height="400" title="Tetris recréé"><br><br>
+        </section>
+
+        <div id="competency-sections"></div>
+
+        <section class="section technical-section" id="sae-techniques" data-nav-section>
+            <div class="container reveal">
+                <div class="section-heading">
+                    <p class="section-kicker">TP techniques</p>
+                    <h2>Des apprentissages techniques à valoriser au-delà des gros projets</h2>
+                    <p class="section-subtitle">
+                        Cette section est prévue pour accueillir les TP de type mini-projet.
+                    </p>
                 </div>
-                
-                <div class="project-card">
-                    <h3><strong>Projet Collaboratif</strong></h3>
-                    <p><strong>Titre :</strong> Projet Muraille de Chine</p>
-                    <p><strong>Équipe :</strong> 5 étudiants</p>
-                    <p><strong>Objectif :</strong> Création d'un site web intéractif et responsive qui agira comme guide lors de la visite de la Grande Muraille de Chine.</p>
-		    <p><strong>Réalisation :</strong> Utilisation de plusieurs outils tels que Gantt Project pour la planification, Figma pour le wireframing, Google Docs pour la documentation et les limites du projet et Visual Studio Code pour le code.</p><br>
-<img src="imageMuraille.png" alt="Site web créé" width="200" height="300" title="Site Muraille de Chine"><br><br>
+                <div class="timeline-list" id="technical-timeline"></div>
+            </div>
+        </section>
+
+        <section class="section featured-section" id="projet-phare" data-nav-section>
+            <div class="container reveal">
+                <div class="section-heading section-heading-split">
+                    <div>
+                        <p class="section-kicker">Projet phare</p>
+                        <h2>Tableau LEGO (site e-commerce)</h2>
+                    </div>
                 </div>
-                
-                <div class="project-card">
-                    <h3><strong>Programmation Orientée Objet</strong></h3>
-                    <p><strong>Titre :</strong> Yam's</p>
-<p><strong>Équipe :</strong> 3 étudiants</p>
-                    <p><strong>Objectif :</strong> Recréer le jeu Yam's (ou Yahtzee) en ligne de code avec le langage Java.</p>
-		    <p><strong>Réalisation :</strong> Utilisation de Google Docs pour la documentation la définition du projet et Eclipse/IntelliJ pour le code.</p>
-                    
-                
+                <div id="featured-project-card"></div>
+            </div>
+        </section>
+
+        <section class="section contact-section" id="contact" data-nav-section>
+            <div class="container reveal">
+                <div class="contact-banner">
+                    <div>
+                        <p class="section-kicker">Contact</p>
+                        <h2>Disponible pour échanger autour de projets, d'une alternance ou d'une poursuite d'études</h2>
+                    </div>
+                </div>
+
+                <div class="contact-grid">
+                    <article class="contact-card">
+                        <span class="contact-label">Email</span>
+                        <a href="mailto:adamkadi307@gmail.com">adamkadi307@gmail.com</a>
+                        <p>Canal principal pour un premier contact professionnel.</p>
+                    </article>
+                    <article class="contact-card">
+                        <span class="contact-label">Téléphone</span>
+                        <a href="tel:0767288075">07 67 28 80 75</a>
+                        <p>Disponible pour un échange rapide ou un suivi de candidature.</p>
+                    </article>
+                    <article class="contact-card">
+                        <span class="contact-label">LinkedIn</span>
+                        <a href="https://www.linkedin.com/in/adam-kadi-b3500b339" target="_blank" rel="noopener">Adam KADI (mon profil)</a>
+                        <p>Pour suivre mon parcours et mes mises à jour professionnelles.</p>
+                    </article>
+                    <article class="contact-card">
+                        <span class="contact-label">Localisation</span>
+                        <p>Paris et périphéries</p>
+                        <p>Mobilité pour les projets, stages et opportunités académiques.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div>
+                <p class="footer-name">Adam Kadi</p>
+                <p>Étudiant en BUT Informatique - Université Gustave Eiffel</p>
+            </div>
+            <div>
+                <p class="footer-title">Ce portfolio met l'accent sur :</p>
+                <ul class="footer-list">
+                    <li>mes compétences acquises durant mes années de BUT Informatique</li>
+                    <li>des projets reliés à des apprentissages concrets</li>
+                </ul>
+            </div>
+            <div>
+                <p class="footer-title">Raccourcis</p>
+                <div class="footer-links">
+                    <a href="#connaissances">Connaissances</a>
+                    <a href="#cv">CV</a>
+                    <a href="#competences">Compétences</a>
+                    <a href="#projet-phare">Projet phare</a>
+                    <a href="CVADAM.pdf" target="_blank" rel="noopener">CV PDF</a>
                 </div>
             </div>
         </div>
-    </section>
-<section id="contact">
-    <div class="container">
-        <div class="section-header">
-            <h2>Contact</h2>
+        <div class="container footer-bottom">
+            <p>Dernière mise à jour <span id="footer-date">mars 2026</span>.</p>
         </div>
-        
-        <div class="content-card">
-            <div class="contact-grid">
-                <div class="contact-item">
-                    <div class="contact-icon">📞</div>
-                    <h3>Téléphone</h3>
-                    <p><a href="tel:0767288075">07 67 28 80 75</a></p>
-                </div>
-                
-                <div class="contact-item">
-                    <div class="contact-icon">✉️</div>
-                    <h3>Email</h3>
-                    <p><a href="mailto:adamkadi307@gmail.com">adamkadi307@gmail.com</a></p>
-                </div>
-                
-                <div class="contact-item">
-                    <div class="contact-icon">💼</div>
-                    <h3>LinkedIn</h3>
-                    <p><a href="https://www.linkedin.com/in/adam-kadi-b3500b339" target="_blank">Mon profil LinkedIn</a></p>
-                </div>
-                
-                <div class="contact-item">
-                    <div class="contact-icon">📍</div>
-                    <h3>Localisation</h3>
-                    <p>Paris et périphéries</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<footer>
-    <div class="container">
-        <div class="footer-content">
-            <div class="footer-section">
-                <h4>Adam KADI</h4>
-                <p>Étudiant en BUT Informatique</p>
-                <p>Université Gustave Eiffel - IUT Marne-la-Vallée</p>
-            </div>
-        <div class="footer-bottom">
-            
-            <p>Réalisé avec passion ❤️ | Dernière mise à jour : Février 2026</p>
-        </div>
-    </div>
-</footer>
+    </footer>
+
+    <script src="assets/js/data.js"></script>
+    <script src="assets/js/app.js"></script>
 </body>
 </html>
+
