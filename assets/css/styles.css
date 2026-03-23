@@ -5,7 +5,8 @@
     --surface-muted: rgba(234, 240, 249, 0.72);
     --text: #101828;
     --text-soft: #475467;
-    --title: #FFFFFF;
+    --title: #0f172a;
+    --title-end: #FFFFFF;
     --border: rgba(15, 23, 42, 0.1);
     --border-strong: rgba(15, 23, 42, 0.16);
     --accent: #0f766e;
@@ -659,6 +660,14 @@ summary {
     line-height: 1.05;
     letter-spacing: -0.04em;
 }
+.contact-banner2 h2 {
+    margin: 0;
+    color: var(--title-end);
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    line-height: 1.05;
+    letter-spacing: -0.04em;
+}
+
 
 .section-subtitle,
 .intro-content > p {
