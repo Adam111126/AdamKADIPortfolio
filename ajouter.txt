@@ -1,2 +1,50 @@
 ajouter des icônes/images pour les outils/langages etc...
 détailler les compétences (description principale -> programme national) -> élaboration (ce qui a été vu/pas vu, ce qui a été maîtrisé/pas maîtrisé)
+
+🔴 Réaliser - Programme national
+
+La compétence Réaliser consiste à concevoir, développer et mettre en œuvre des solutions informatiques répondant aux besoins d’un client. Elle mobilise des capacités en programmation, en algorithmique et en structuration du code, tout en garantissant sa qualité et sa maintenabilité. L’objectif est de produire des applications fiables, fonctionnelles et bien documentées.
+
+🔴 Réaliser - Mon parcours
+
+
+
+🟠 Optimiser - Programme national
+
+Optimiser vise à améliorer les performances d’une solution informatique en tenant compte de critères comme le temps d’exécution, la consommation de ressources ou la précision. Cela implique de savoir choisir les bons algorithmes, analyser des problèmes complexes et justifier ses choix techniques pour obtenir des résultats efficaces et pertinents.
+
+🟠 Optimiser - Mon parcours
+
+
+
+🟡 Administrer - Programme national
+
+La compétence Administrer concerne la gestion et le maintien en conditions opérationnelles des systèmes informatiques. Elle inclut l’installation, la configuration et la sécurisation des infrastructures, tout en assurant la continuité de service. L’objectif est de garantir un fonctionnement stable, sécurisé et performant des systèmes et réseaux.
+
+🟡 Administrer - Mon parcours
+
+
+
+🟢 Gérer - Programme national
+
+Gérer consiste à organiser, exploiter et valoriser les données d’une organisation. Cela passe par la conception de bases de données, le respect des réglementations (comme la protection des données personnelles) et la garantie de la cohérence des informations. Cette compétence permet d’assurer un pilotage efficace de l’activité grâce à des données fiables.
+
+🟢 Gérer - Mon parcours
+
+
+
+🔵 Conduire - Programme national
+
+La compétence Conduire porte sur la gestion de projet informatique. Elle implique de comprendre les besoins des utilisateurs, d’organiser les tâches et de piloter un projet en utilisant des méthodes adaptées (agiles ou classiques). Elle inclut aussi la communication avec les différents acteurs et le respect des normes et contraintes du projet.
+
+🔵 Conduire - Mon parcours
+
+
+
+⚫ Collaborer - Programme national
+
+Collaborer met l’accent sur le travail en équipe et les interactions professionnelles. Elle nécessite de communiquer efficacement, de s’intégrer dans un groupe pluridisciplinaire et de contribuer activement aux projets collectifs. Cette compétence favorise une dynamique de travail productive, basée sur l’échange, l’entraide et la responsabilité.
+
+⚫ Collaborer - Mon parcours
+
+
