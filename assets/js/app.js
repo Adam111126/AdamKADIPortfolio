@@ -178,11 +178,10 @@
                         </div>
                         <div class="competency-layout">
                             <aside class="competency-aside">
-                                <p>${escapeHtml(competency.summary)}</p>
+                                <p>${escapeHtml(competency.personalSummary || competency.summary)}</p>
                                 <div class="focus-chip-row">
                                     ${competency.focusPoints.map((point) => `<span class="focus-chip">${escapeHtml(point)}</span>`).join("")}
                                 </div>
-                                ${competency.technicalPreview ? renderAdminPreview() : ""}
                             </aside>
                             <div class="projects-grid">
                                 ${projects.map((project) => renderProjectCard(project)).join("")}

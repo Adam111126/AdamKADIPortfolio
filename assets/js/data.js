@@ -8,7 +8,8 @@ window.PORTFOLIO_DATA = {
         {
             id: "realiser",
             title: "Réaliser",
-            summary: "J'ai conçu et développé plusieurs applications et sites, du projet web simple à l'application plus complète, en mobilisant différents langages, interfaces et logiques métier.",
+            summary: "La compétence Réaliser consiste à concevoir, développer et mettre en œuvre des solutions informatiques répondant aux besoins d'un client. Elle mobilise des capacités en programmation, en algorithmique et en structuration du code, tout en garantissant sa qualité et sa maintenabilité. L'objectif est de produire des applications fiables, fonctionnelles et bien documentées.",
+            personalSummary: "La compétence Réaliser est la plus pratiquée et mise en avant. Au début du BUT, j'avais un peu de mal avec le développement, n'y étant pas habitué à cause de mon orientation en terminale. Malgré cela, j'ai réussi à m'y habituer malgré certaines difficultés encore présentes. C'est une compétence phare du BUT Informatique et c'est de loin celle que je pratique le plus pour m'améliorer. L'apprentissage de plusieurs langages rend la tâche un peu complexe, mais le fait de me voir progresser et de constater mes améliorations est encourageant pour la suite. Cette compétence s'illustre à travers des projets comme le Tableau LEGO, le Tetris en Python, le Yam's en Java, le site Station de ski, le guide touristique sur la Grande Muraille de Chine et l'application Pizza personnalisée.",
             focusPoints: [
                 "développement web et logiciel",
                 "interfaces et logique métier",
@@ -26,7 +27,8 @@ window.PORTFOLIO_DATA = {
         {
             id: "optimiser",
             title: "Optimiser",
-            summary: "Je mets en avant ma capacité à réfléchir à l'efficacité des solutions, notamment à travers les algorithmes utilisés pour générer les mosaïques LEGO et les choix techniques influençant coût, qualité et performance.",
+            summary: "Optimiser vise à améliorer les performances d'une solution informatique en tenant compte de critères comme le temps d'exécution, la consommation de ressources ou la précision. Cela implique de savoir choisir les bons algorithmes, analyser des problèmes complexes et justifier ses choix techniques pour obtenir des résultats efficaces et pertinents.",
+            personalSummary: "La compétence Optimiser est une compétence dans laquelle je ne suis pas particulièrement à l'aise. En effet, cela change beaucoup de la compétence Réaliser, même si elles se ressemblent au premier abord. Cette compétence me met quotidiennement au défi car elle pousse à comprendre comment et pourquoi nous utilisons telle ou telle méthode ou fonction. Elle est étroitement liée à la compétence Réaliser et de ce fait, c'est une compétence importante. Malgré cela, je redouble d'efforts pour m'améliorer et pour que cette compétence devienne naturelle pour moi. Elle s'illustre notamment à travers le module C du Tableau LEGO et le Tetris en Python.",
             focusPoints: [
                 "choix algorithmiques",
                 "compromis qualité / coût",
@@ -40,7 +42,8 @@ window.PORTFOLIO_DATA = {
         {
             id: "administrer",
             title: "Administrer",
-            summary: "J'ai travaillé sur l'administration technique d'applications et d'infrastructures, avec une attention particulière aux bases de données, aux services, aux serveurs et aux fondamentaux réseau.",
+            summary: "La compétence Administrer concerne la gestion et le maintien en conditions opérationnelles des systèmes informatiques. Elle inclut l'installation, la configuration et la sécurisation des infrastructures, tout en assurant la continuité de service. L'objectif est de garantir un fonctionnement stable, sécurisé et performant des systèmes et réseaux.",
+            personalSummary: "La compétence Administrer est une compétence différente des autres. Elle est basée uniquement sur l'opérationnalité d'un système. Nous apprenons cette compétence à travers la mise en service de sites web, logiciels et systèmes informatiques, notamment dans le domaine du réseau. J'aime cette compétence car elle est très tangible selon moi. Je n'ai pas de facilités particulières dans cette compétence, cependant j'aime beaucoup la travailler. Elle se retrouve dans le projet Station de ski et la partie base de données du Tableau LEGO.",
             focusPoints: [
                 "bases de données relationnelles",
                 "services et serveurs",
@@ -49,13 +52,13 @@ window.PORTFOLIO_DATA = {
             projectIds: [
                 "station-ski",
                 "tableau-lego-admin"
-            ],
-            technicalPreview: true
+            ]
         },
         {
             id: "gerer",
             title: "Gérer",
-            summary: "Cette compétence met en avant l'organisation du travail, le suivi de projet, la répartition des tâches et l'usage d'outils et de méthodes inspirés de l'agilité.",
+            summary: "Gérer consiste à organiser, exploiter et valoriser les données d'une organisation. Cela passe par la conception de bases de données, le respect des réglementations (comme la protection des données personnelles) et la garantie de la cohérence des informations. Cette compétence permet d'assurer un pilotage efficace de l'activité grâce à des données fiables.",
+            personalSummary: "La compétence Gérer est une compétence à part du BUT Informatique, comme celles de Conduire et Collaborer. Cette compétence nous enseigne comment développer de manière consciente. Elle nous apprend à respecter les différentes réglementations, les différentes conventions de développement, etc. Je trouve cette compétence intéressante car elle nous permet de devenir de réels informaticiens. Elle s'illustre à travers l'organisation du projet Tableau LEGO.",
             focusPoints: [
                 "Jira et suivi des tâches",
                 "GitHub et versionnement",
@@ -68,7 +71,8 @@ window.PORTFOLIO_DATA = {
         {
             id: "conduire",
             title: "Conduire",
-            summary: "Je valorise ici ma capacité à piloter un projet, cadrer un besoin, organiser une équipe et produire les livrables utiles au suivi et à la réalisation.",
+            summary: "La compétence Conduire porte sur la gestion de projet informatique. Elle implique de comprendre les besoins des utilisateurs, d'organiser les tâches et de piloter un projet en utilisant des méthodes adaptées (agiles ou classiques). Elle inclut aussi la communication avec les différents acteurs et le respect des normes et contraintes du projet.",
+            personalSummary: "La compétence Conduire est unique elle aussi. Elle nous met dans la peau d'un chef de projet et nous permet de découvrir différentes méthodologies de travail telles que les méthodologies Agile/SCRUM. C'est une compétence que j'aime beaucoup car définir un projet et le mener à bien de A à Z est quelque chose de grisant pour moi. J'ai un peu d'expérience dans cette compétence car dans la majorité des projets auxquels j'ai pris part, j'ai été élu chef de projet. Elle se retrouve dans la Pizza personnalisée, la coordination de la Grande Muraille de Chine et le pilotage collectif du Tableau LEGO.",
             focusPoints: [
                 "pilotage de projet",
                 "cadrage et planification",
@@ -83,7 +87,8 @@ window.PORTFOLIO_DATA = {
         {
             id: "collaborer",
             title: "Collaborer",
-            summary: "Le travail en équipe a été central dans plusieurs projets, avec de la communication continue, des outils collaboratifs et une répartition claire des rôles selon les besoins du groupe.",
+            summary: "Collaborer met l'accent sur le travail en équipe et les interactions professionnelles. Elle nécessite de communiquer efficacement, de s'intégrer dans un groupe pluridisciplinaire et de contribuer activement aux projets collectifs. Cette compétence favorise une dynamique de travail productive, basée sur l'échange, l'entraide et la responsabilité.",
+            personalSummary: "La compétence Collaborer s'inscrit dans la continuité de la compétence Conduire. C'est une compétence spéciale car elle n'est pas technique à proprement parler, mais elle permet d'apprendre à travailler dans un groupe de manière plus efficace. C'est une compétence que je trouve assez facile car le plus gros du travail est de retenir certains concepts. Le fait que nous soyons formés à devenir plus efficients est quelque chose que je trouve très bien pensé et utile. Elle s'illustre dans le travail d'équipe du Tableau LEGO, la Pizza personnalisée, la Grande Muraille de Chine, le Yam's en Java et la collaboration sur le projet Station de ski.",
             focusPoints: [
                 "GitHub",
                 "Jira",
@@ -116,8 +121,10 @@ window.PORTFOLIO_DATA = {
                 "enchaînement entre génération, stock et livraison",
                 "travail d'équipe sur un projet long"
             ],
-            placeholder: "Projet multi-technologies",
-            placeholderCaption: "Capture à intégrer plus tard"
+            image: {
+                src: "img/tableaulego.PNG",
+                alt: "Capture du site e-commerce Tableau LEGO"
+            }
         },
         {
             id: "tetris-python",
@@ -129,7 +136,7 @@ window.PORTFOLIO_DATA = {
             learned: "Logique de jeu, interface graphique et structuration du code.",
             details: "Ce projet m'a permis de travailler la boucle de jeu, la gestion des collisions et l'enchaînement des états dans une interface interactive.",
             image: {
-                src: "imageTetris.png",
+                src: "img/imageTetris.png",
                 alt: "Capture du jeu Tetris développé en Python"
             }
         },
@@ -143,8 +150,10 @@ window.PORTFOLIO_DATA = {
             skills: ["Réaliser", "Collaborer"],
             learned: "Conception orientée objet, logique applicative et travail à deux.",
             details: "Le projet a été utile pour poser des bases propres côté objet, répartir les responsabilités dans le code et apprendre à avancer à deux sur une même application.",
-            placeholder: "Jeu Java",
-            placeholderCaption: "Prototype console / logique applicative"
+            image: {
+                src: "img/yahtzee.jpg",
+                alt: "Capture du jeu Yam's développé en Java"
+            }
         },
         {
             id: "station-ski",
@@ -155,8 +164,10 @@ window.PORTFOLIO_DATA = {
             skills: ["Réaliser", "Administrer"],
             learned: "Modélisation des données, intégration BDD et interface web.",
             details: "Le projet m'a permis de lier une base relationnelle à une interface simple en gardant une logique métier claire autour de la gestion des clients.",
-            placeholder: "Gestion de clients",
-            placeholderCaption: "BDD relationnelle et interface web"
+            image: {
+                src: "img/zarzaskj.png",
+                alt: "Capture du site de gestion de station de ski"
+            }
         },
         {
             id: "muraille-chine",
@@ -169,7 +180,7 @@ window.PORTFOLIO_DATA = {
             learned: "Création d'un site vitrine, organisation d'équipe et communication orale en anglais.",
             details: "Au-delà du site, ce projet m'a entraîné à coordonner les étapes, préparer une soutenance et défendre le travail produit dans un contexte académique structuré.",
             image: {
-                src: "imageMuraille.png",
+                src: "img/imageMuraille.png",
                 alt: "Capture du site guide touristique sur la Grande Muraille de Chine"
             }
         },
@@ -183,8 +194,10 @@ window.PORTFOLIO_DATA = {
             learned: "Réalisation d'une application métier, conception d'interface et intégration de logique de personnalisation.",
             details: "Le projet a combiné une logique de personnalisation, une interface orientée usage et un vrai travail de cadrage pour rendre l'application cohérente du point de vue métier.",
             deliverables: ["Backlog", "Sprint backlog", "Diagramme de Gantt", "Cahier des charges", "Charte graphique"],
-            placeholder: "Application métier",
-            placeholderCaption: "Personnalisation et interface JavaFX"
+            image: {
+                src: "img/imperiuminpizza.PNG",
+                alt: "Capture de l'application Pizza personnalisée en JavaFX"
+            }
         },
         {
             id: "tableau-lego-module-c",
@@ -200,8 +213,10 @@ window.PORTFOLIO_DATA = {
                 "traitement d'image converti en contraintes métier",
                 "mise en œuvre concrète en C"
             ],
-            placeholder: "Algorithmique en C",
-            placeholderCaption: "Optimiser le coût ou le rendu"
+            image: {
+                src: "img/capturepourleC.PNG",
+                alt: "Capture du module C de génération de mosaïques LEGO"
+            }
         },
         {
             id: "tableau-lego-admin",
@@ -212,8 +227,10 @@ window.PORTFOLIO_DATA = {
             skills: ["Administrer", "Réaliser"],
             learned: "Rôle d'une BDD dans une application complète et cohérence entre données, stock et interface.",
             details: "Cette partie met en évidence l'importance d'une base bien structurée pour gérer les comptes, les médias déposés et le stock de pièces dans un même produit.",
-            placeholder: "BDD et stock",
-            placeholderCaption: "Données, utilisateurs et images"
+            image: {
+                src: "img/zarzaskj.png",
+                alt: "Capture de la base de données et gestion du stock LEGO"
+            }
         },
         {
             id: "tableau-lego-gestion",
@@ -229,8 +246,10 @@ window.PORTFOLIO_DATA = {
                 "versionnement collectif du code",
                 "communication continue de l'équipe"
             ],
-            placeholder: "Méthode Agile",
-            placeholderCaption: "Suivi, coordination et rituels"
+            image: {
+                src: "img/tableaulego.PNG",
+                alt: "Capture du projet Tableau LEGO - organisation de projet"
+            }
         },
         {
             id: "muraille-chine-conduite",
@@ -242,8 +261,10 @@ window.PORTFOLIO_DATA = {
             skills: ["Conduire", "Collaborer", "Réaliser"],
             learned: "Coordination, organisation et préparation d'une présentation structurée.",
             details: "J'y ai renforcé une posture de pilotage légère mais utile: répartir, suivre, relancer et préparer un rendu cohérent pour l'équipe.",
-            placeholder: "Coordination de projet",
-            placeholderCaption: "Site vitrine et soutenance"
+            image: {
+                src: "img/imageMuraille.png",
+                alt: "Capture du site guide touristique sur la Grande Muraille de Chine"
+            }
         },
         {
             id: "tableau-lego-conduite",
@@ -254,8 +275,10 @@ window.PORTFOLIO_DATA = {
             skills: ["Conduire", "Gérer", "Collaborer"],
             learned: "Pilotage collectif, suivi d'avancement et maintien d'un cap commun sur un projet dense.",
             details: "Le projet exigeait de garder une vision d'ensemble malgré la diversité des briques techniques et des rythmes d'avancement dans l'équipe.",
-            placeholder: "Pilotage multi-volets",
-            placeholderCaption: "Longueur du projet et coordination"
+            image: {
+                src: "img/tableaulego.PNG",
+                alt: "Capture du projet Tableau LEGO - pilotage collectif"
+            }
         },
         {
             id: "tableau-lego-collaboration",
@@ -267,8 +290,10 @@ window.PORTFOLIO_DATA = {
             skills: ["Collaborer", "Gérer", "Conduire"],
             learned: "Communication continue, répartition des rôles et articulation entre plusieurs blocs de travail.",
             details: "La réussite du projet reposait autant sur l'entente technique que sur la capacité à se répartir les tâches, se synchroniser et partager l'information utile au bon moment.",
-            placeholder: "Collaboration outillée",
-            placeholderCaption: "GitHub, Jira et Discord"
+            image: {
+                src: "img/tableaulego.PNG",
+                alt: "Capture du projet Tableau LEGO - travail d'équipe"
+            }
         },
         {
             id: "station-ski-collaboration",
@@ -279,8 +304,10 @@ window.PORTFOLIO_DATA = {
             skills: ["Collaborer", "Administrer", "Réaliser"],
             learned: "Répartition des rôles, cohérence de groupe et articulation entre base de données et interface.",
             details: "Même sur un projet plus compact, la qualité du rendu dépendait d'une bonne séparation des responsabilités et d'un suivi partagé des choix techniques.",
-            placeholder: "Projet en équipe",
-            placeholderCaption: "Organisation et intégration"
+            image: {
+                src: "img/zarzaskj.png",
+                alt: "Capture du projet Station de ski - répartition des rôles"
+            }
         }
     ],
     technicalLabs: [
@@ -339,8 +366,10 @@ window.PORTFOLIO_DATA = {
             "travail d'équipe"
         ],
         details: "C'est le projet le plus complet du portfolio parce qu'il relie technique, produit et organisation. Il montre à la fois de la conception, du développement, de la réflexion algorithmique et un vrai fonctionnement d'équipe.",
-        placeholder: "Tableau LEGO",
-        placeholderCaption: "Projet phare - visuel à remplacer quand la capture définitive sera prête"
+        image: {
+            src: "img/tableaulego.PNG",
+            alt: "Capture du projet phare Tableau LEGO"
+        }
     },
     finalizingProjects: [
         {

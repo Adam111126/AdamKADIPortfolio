@@ -7,7 +7,7 @@ La compétence Réaliser consiste à concevoir, développer et mettre en œuvre 
 
 🔴 Réaliser - Mon parcours
 
-
+La compétence Réaliser est largement celle la plus pratiquée et mise en avant. Au début du BUT j'avais un peu de mal avec le développement n'y étant pas habitué à cause de mon orientation en terminale. Outre cela j'ai réussi à m'y habituer malgré certaines difficultés encore présente. C'est une compétence phare du BUT Informatique est c'est de loin celle que je pratique le plus pour m'améliorer. L'apprentissage de plusiseurs languages rend la tâche un peu complexe. Mais le fait de me voir progresser et de voir mes améliorations est encourageant pour moi pour la suite.
 
 🟠 Optimiser - Programme national
 
@@ -15,7 +15,7 @@ Optimiser vise à améliorer les performances d’une solution informatique en t
 
 🟠 Optimiser - Mon parcours
 
-
+La compétence Optimiser est une compétence dans laquelle je ne suis pas particulièrement à l'aise. En effet cela change beaucoup de la compétence Réaliser même si elle se ressemble aux premiers abords. Cette compétence me met quotidiennement au défi car elle pousse à comprendre comment et pourquoi nous utilisons telle ou telle méthode/fonction. Elle est étroitement liée à la compétence Réaliser et de ce fait c'est une compétence qui est importante. Malgré cela je redouble d'effort dans cette compétence pour m'améliorer et pour que cette compétence devienne naturelle pour moi.
 
 🟡 Administrer - Programme national
 
@@ -23,7 +23,7 @@ La compétence Administrer concerne la gestion et le maintien en conditions opé
 
 🟡 Administrer - Mon parcours
 
-
+La compétence Administrer est une compétence différente des autres. Elle est basée uniquement sur l'operationnalité d'un système. Nous apprenons cette compétence à travers la mise en service de sites web, logiciels, systèmes informatiques nottament dans le domaine du réseau. J'aime cette compétence car elle est très tangible selon moi. Je n'ai pas de facilités particulière dans cette compétence cependant j'aime beaucoup la travailer.
 
 🟢 Gérer - Programme national
 
@@ -31,7 +31,7 @@ Gérer consiste à organiser, exploiter et valoriser les données d’une organi
 
 🟢 Gérer - Mon parcours
 
-
+La compétence Gérer est une compétence à part du BUT Informatique comme celle de Conduire et Collaborer. Cette compétence nous enseigne comment développer de manière consciente. Elle nous apprends à respecter les différentes règlementation, les différentes convention de développement etc... Je trouve cette compétence intéressante car elle nous permet de devenir de réel informaticien. 
 
 🔵 Conduire - Programme national
 
@@ -39,7 +39,7 @@ La compétence Conduire porte sur la gestion de projet informatique. Elle impliq
 
 🔵 Conduire - Mon parcours
 
-
+La compétence Conduire est unique elle aussi. Elle nous met dans la peau d'un chef de projet. Elle nous permet de découvrir différentes méthodologies de travail telles que les méthodologies Agile/SCRUM etc... C'est une compétence que j'aime beaucoup car définir un projet et le mener à bien de A à Z est quelque chose de grisant pour moi. J'ai un peu d'expérience dans cette compétence car dans la majorité des projets dans lesquels j'ai pris part j'ai été élu chef de projet. 
 
 ⚫ Collaborer - Programme national
 
@@ -47,4 +47,4 @@ Collaborer met l’accent sur le travail en équipe et les interactions professi
 
 ⚫ Collaborer - Mon parcours
 
-
+La compétence Collaborer s'inscrit dans la continuité de la compétence Conduire. C'est un compétence spéciale car elle n'est pas technique à proprement parlé mais elle permet d'apprendre à travailler dans un groupe de manière plus efficace. C'est une compétence que je trouve assez facile car le plus gros du travail est de retenir certains concepts. Le fait que nous soyons formés à devenir plus efficient est quelque chose que je trouve très bien pensé et utile. 
