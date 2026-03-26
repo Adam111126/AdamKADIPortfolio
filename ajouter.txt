@@ -1,6 +1,3 @@
-ajouter des icônes/images pour les outils/langages etc...
-détailler les compétences (description principale -> programme national) -> élaboration (ce qui a été vu/pas vu, ce qui a été maîtrisé/pas maîtrisé)
-
 🔴 Réaliser - Programme national
 
 La compétence Réaliser consiste à concevoir, développer et mettre en œuvre des solutions informatiques répondant aux besoins d’un client. Elle mobilise des capacités en programmation, en algorithmique et en structuration du code, tout en garantissant sa qualité et sa maintenabilité. L’objectif est de produire des applications fiables, fonctionnelles et bien documentées.

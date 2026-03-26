@@ -92,7 +92,7 @@
                     </div>
                 </header>
                 <div class="project-summary">
-                    <p class="project-summary">${escapeHtml(project.description)}</p>
+                    ${renderReadMore(project.description)}
                     ${renderBadgeList(project.technologies, "tech")}
                     ${renderToolList(project.tools)}
                     ${renderBadgeList(project.skills, "skill")}
@@ -108,6 +108,7 @@
                         </div>
                     </details>
                 ` : ""}
+                ${project.github ? `<a class="button button-secondary github-link" href="${escapeHtml(project.github)}" target="_blank" rel="noopener">Voir sur GitHub</a>` : ""}
             </article>
         `;
     };
@@ -129,31 +130,21 @@
         `).join("");
     };
 
-    const renderAdminPreview = () => {
-        const previewItems = data.technicalLabs.slice(0, 4);
+    const renderReadMore = (text, wordLimit = 30) => {
+        const escaped = escapeHtml(text);
+        const words = escaped.split(/\s+/);
+
+        if (words.length <= wordLimit) {
+            return `<p>${escaped}</p>`;
+        }
+
+        const truncated = words.slice(0, wordLimit).join(" ");
 
         return `
-            <div class="admin-preview">
-                <div class="admin-preview-heading">
-                    <div>
-                        <h3>Focus SAÉ / TP techniques</h3>
-                        <p>Un aperçu compact pour relier la compétence Administrer aux travaux techniques.</p>
-                    </div>
-                    <a class="button button-secondary" href="#sae-techniques">Voir toute la section</a>
-                </div>
-                <div class="admin-preview-grid">
-                    ${previewItems.map((item) => `
-                        <article class="admin-preview-card">
-                            <span class="project-status">${escapeHtml(item.label)}</span>
-                            <h4>${escapeHtml(item.title)}</h4>
-                            <p>${escapeHtml(item.description)}</p>
-                            <div class="admin-preview-tools">
-                                ${item.tools.map((tool) => `<span class="tool-pill">${escapeHtml(tool)}</span>`).join("")}
-                            </div>
-                        </article>
-                    `).join("")}
-                </div>
-            </div>
+            <p class="read-more-container">
+                <span class="read-more-truncated">${truncated}<span class="read-more-ellipsis">… </span><button class="read-more-btn" type="button">Lire la suite</button></span>
+                <span class="read-more-full" hidden>${escaped}</span>
+            </p>
         `;
     };
 
@@ -178,7 +169,7 @@
                         </div>
                         <div class="competency-layout">
                             <aside class="competency-aside">
-                                <p>${escapeHtml(competency.personalSummary || competency.summary)}</p>
+                                ${renderReadMore(competency.personalSummary || competency.summary)}
                                 <div class="focus-chip-row">
                                     ${competency.focusPoints.map((point) => `<span class="focus-chip">${escapeHtml(point)}</span>`).join("")}
                                 </div>
@@ -232,8 +223,8 @@
                             <h3>${escapeHtml(project.title)}</h3>
                         </div>
                     </div>
-                    <p class="featured-copy">${escapeHtml(project.summary)}</p>
-                    <p class="featured-copy">${escapeHtml(project.details)}</p>
+                    <div class="featured-copy">${renderReadMore(project.summary)}</div>
+                    <div class="featured-copy">${renderReadMore(project.details)}</div>
                     <div class="featured-badges">
                         ${project.stack.map((item) => `<span class="badge tech">${escapeHtml(item)}</span>`).join("")}
                     </div>
@@ -263,6 +254,7 @@
                             </div>
                         </section>
                     </div>
+                    ${project.github ? `<a class="button button-secondary github-link" href="${escapeHtml(project.github)}" target="_blank" rel="noopener">Voir sur GitHub</a>` : ""}
                 </div>
             </article>
         `;
@@ -478,6 +470,19 @@
         });
     };
 
+    const initReadMore = () => {
+        document.addEventListener("click", (event) => {
+            const btn = event.target.closest(".read-more-btn");
+            if (!btn) return;
+
+            const container = btn.closest(".read-more-container");
+            if (!container) return;
+
+            container.querySelector(".read-more-truncated").hidden = true;
+            container.querySelector(".read-more-full").hidden = false;
+        });
+    };
+
     const init = () => {
         renderOverview();
         renderCompetencySections();
@@ -488,6 +493,7 @@
         updateFooterDate();
         initReveal();
         initNavigation();
+        initReadMore();
     };
 
     if (document.readyState === "loading") {

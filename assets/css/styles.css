@@ -963,6 +963,13 @@ summary {
     object-fit: cover;
 }
 
+.project-media img[src*="image.webp"],
+.featured-visual img[src*="image.webp"] {
+    object-fit: contain;
+    object-position: center;
+    padding: 10px;
+}
+
 .project-media.has-image,
 .featured-visual.has-image {
     background: #0f172a;
@@ -1002,6 +1009,22 @@ summary {
 .placeholder-caption {
     color: rgba(248, 250, 252, 0.8);
     max-width: 26ch;
+}
+
+.read-more-btn {
+    background: none;
+    border: none;
+    color: var(--accent);
+    cursor: pointer;
+    font-size: inherit;
+    font-family: inherit;
+    padding: 0;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+.read-more-btn:hover {
+    color: var(--title);
 }
 
 .project-card header,

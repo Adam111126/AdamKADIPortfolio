@@ -112,6 +112,7 @@ window.PORTFOLIO_DATA = {
             type: "Groupe",
             technologies: ["PHP", "HTML", "CSS", "Bootstrap", "C", "Java", "MySQL"],
             tools: ["GitHub", "Jira", "Discord"],
+            github: "https://github.com/redlinka/TableauLEGO",
             description: "Site e-commerce permettant de générer des mosaïques LEGO à partir d'images fournies par les utilisateurs, puis de préparer la livraison des pièces nécessaires.",
             skills: ["Réaliser", "Optimiser", "Administrer", "Gérer", "Collaborer"],
             learned: "Développement multi-technologies, articulation front/back/outils métier et conception d'un produit concret.",
@@ -122,7 +123,7 @@ window.PORTFOLIO_DATA = {
                 "travail d'équipe sur un projet long"
             ],
             image: {
-                src: "img/tableaulego.PNG",
+                src: "img/image.webp",
                 alt: "Capture du site e-commerce Tableau LEGO"
             }
         },
@@ -204,6 +205,7 @@ window.PORTFOLIO_DATA = {
             title: "Tableau LEGO - module C",
             type: "Groupe",
             technologies: ["C"],
+            github: "https://github.com/redlinka/TableauLEGO",
             description: "Génération de mosaïques LEGO via plusieurs algorithmes permettant d'optimiser le coût ou la qualité du rendu.",
             skills: ["Optimiser", "Réaliser"],
             learned: "Choix algorithmique, compromis qualité/coût et optimisation d'un traitement.",
@@ -223,6 +225,7 @@ window.PORTFOLIO_DATA = {
             title: "Tableau LEGO - base de données",
             type: "Groupe",
             technologies: ["MySQL", "PHP", "Java"],
+            github: "https://github.com/redlinka/TableauLEGO",
             description: "Gestion des utilisateurs, des images et du stock de pièces LEGO via une base de données intégrée au projet.",
             skills: ["Administrer", "Réaliser"],
             learned: "Rôle d'une BDD dans une application complète et cohérence entre données, stock et interface.",
@@ -237,6 +240,7 @@ window.PORTFOLIO_DATA = {
             title: "Tableau LEGO - organisation de projet",
             type: "Groupe",
             technologies: ["Jira", "GitHub", "Discord"],
+            github: "https://github.com/redlinka/TableauLEGO",
             description: "Projet d'équipe structuré avec une méthodologie Agile/SCRUM pour suivre les tâches et les livrables.",
             skills: ["Gérer", "Collaborer", "Conduire"],
             learned: "Suivi des tâches, répartition du travail et coordination d'équipe dans la durée.",
@@ -247,7 +251,7 @@ window.PORTFOLIO_DATA = {
                 "communication continue de l'équipe"
             ],
             image: {
-                src: "img/tableaulego.PNG",
+                src: "img/image.webp",
                 alt: "Capture du projet Tableau LEGO - organisation de projet"
             }
         },
@@ -271,12 +275,13 @@ window.PORTFOLIO_DATA = {
             title: "Tableau LEGO - pilotage collectif",
             type: "Groupe",
             technologies: ["Jira", "GitHub", "Discord"],
+            github: "https://github.com/redlinka/TableauLEGO",
             description: "Projet d'équipe long avec suivi, coordination et organisation du travail sur plusieurs volets techniques.",
             skills: ["Conduire", "Gérer", "Collaborer"],
             learned: "Pilotage collectif, suivi d'avancement et maintien d'un cap commun sur un projet dense.",
             details: "Le projet exigeait de garder une vision d'ensemble malgré la diversité des briques techniques et des rythmes d'avancement dans l'équipe.",
             image: {
-                src: "img/tableaulego.PNG",
+                src: "img/image.webp",
                 alt: "Capture du projet Tableau LEGO - pilotage collectif"
             }
         },
@@ -286,12 +291,13 @@ window.PORTFOLIO_DATA = {
             type: "Groupe",
             technologies: ["PHP", "C", "Java", "MySQL"],
             tools: ["GitHub", "Jira", "Discord"],
+            github: "https://github.com/redlinka/TableauLEGO",
             description: "Projet collectif dans lequel la coordination entre membres, outils et spécialités techniques était indispensable.",
             skills: ["Collaborer", "Gérer", "Conduire"],
             learned: "Communication continue, répartition des rôles et articulation entre plusieurs blocs de travail.",
             details: "La réussite du projet reposait autant sur l'entente technique que sur la capacité à se répartir les tâches, se synchroniser et partager l'information utile au bon moment.",
             image: {
-                src: "img/tableaulego.PNG",
+                src: "img/image.webp",
                 alt: "Capture du projet Tableau LEGO - travail d'équipe"
             }
         },
@@ -345,6 +351,7 @@ window.PORTFOLIO_DATA = {
     featuredProject: {
         title: "Tableau LEGO",
         status: "Projet principal du portfolio",
+        github: "https://github.com/redlinka/TableauLEGO",
         summary: "Une plateforme e-commerce capable de transformer une image en mosaïque LEGO exploitable, puis de préparer le stock nécessaire à la commande.",
         stack: ["PHP", "HTML", "CSS", "Bootstrap", "C", "Java", "MySQL"],
         objectives: [
@@ -367,7 +374,7 @@ window.PORTFOLIO_DATA = {
         ],
         details: "C'est le projet le plus complet du portfolio parce qu'il relie technique, produit et organisation. Il montre à la fois de la conception, du développement, de la réflexion algorithmique et un vrai fonctionnement d'équipe.",
         image: {
-            src: "img/tableaulego.PNG",
+            src: "img/image.webp",
             alt: "Capture du projet phare Tableau LEGO"
         }
     },
