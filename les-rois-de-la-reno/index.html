@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<meta name="theme-color" content="#132733">
+<meta name="description" content="Concept de refonte du site Les Rois de la Réno, entreprise de rénovation énergétique et intérieure à Drancy. Maquette de présentation non officielle.">
+<title>Les Rois de la Réno — Rénover avec ambition · Concept de refonte</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://images.unsplash.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#142a36;--navy2:#0e2029;--gold:#d6a765;--gold2:#f1d09b;--paper:#f9f7f3;--cream:#f1eee7;--ink:#1e3038;--muted:#69747a;--line:#deded8;--white:#fff;--serif:'Playfair Display',Georgia,serif;--sans:'Manrope',Arial,sans-serif;--body:'DM Sans',Arial,sans-serif}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:92px}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--body);-webkit-font-smoothing:antialiased;overflow-x:clip}
+a{color:inherit;text-decoration:none}button,input,textarea,select{font:inherit}button{cursor:pointer}img{max-width:100%;display:block}svg{display:block}
+::selection{background:#d6a765;color:#142a36}
+.container{max-width:1380px;width:calc(100% - clamp(38px,7vw,128px));margin-inline:auto}
+.eyebrow{font:800 10px var(--sans);text-transform:uppercase;letter-spacing:.23em}
+.sec-title{font:600 clamp(36px,4.4vw,67px)/1.15 var(--serif);letter-spacing:-.047em;margin:18px 0 0}
+.sec-title em{font-weight:500;color:#ad7e47}
+.copy{font:400 15px/1.9 var(--body);color:var(--muted)}
+.section{padding:clamp(78px,8vw,124px) 0}
+.button{min-height:52px;display:inline-flex;align-items:center;justify-content:center;gap:24px;font:800 11px var(--sans);text-transform:uppercase;letter-spacing:.1em;padding:16px 23px;border:1px solid transparent;transition:transform .22s,background .22s,border-color .22s}
+.button:hover{transform:translateY(-3px)}
+.button-gold{background:var(--gold);color:var(--navy2)}
+.button-gold:hover{background:var(--gold2)}
+.button-white{background:#fff;color:var(--navy)}
+.button-white:hover{background:#f5eee1}
+.button-outline{border-color:#b9a78c;background:transparent;color:white}
+.button-outline:hover{background:#ffffff1c}
+.demo{background:#f4e7d3;color:#654d2b;text-align:center;padding:9px 15px;font:800 10px/1.5 var(--sans);letter-spacing:.13em;text-transform:uppercase}
+.header{background:var(--white);border-bottom:1px solid #e8e8e5;position:relative;z-index:40}
+.nav{display:flex;align-items:center;justify-content:space-between;min-height:92px;gap:22px}
+.brand{display:inline-flex;align-items:center;gap:11px;min-width:238px}
+.crown{width:49px;height:49px;background:var(--navy);display:grid;place-items:center;border-radius:3px;flex:0 0 auto}
+.crown svg{width:29px;height:29px;color:var(--gold)}
+.brand-text{display:flex;flex-direction:column;gap:3px}
+.brand-text b{font:800 20px/.98 var(--sans);letter-spacing:-.06em;color:#152c37}
+.brand-text small{font:800 8px/1.3 var(--sans);color:#aa7b42;letter-spacing:.22em;text-transform:uppercase;margin-top:3px}
+.navlinks{display:flex;align-items:center;gap:clamp(15px,2.5vw,36px)}
+.navlinks a{font:700 12px var(--sans);color:#38464c;white-space:nowrap;transition:color .2s}
+.navlinks a:hover{color:#bd8848}
+.nav-actions{display:flex;align-items:center;gap:12px}
+.nav-number{font:800 12px var(--sans);white-space:nowrap;color:#20343e}
+.nav-cta{background:var(--navy);color:white;white-space:nowrap;border-radius:2px;padding:16px 18px;font:800 10px var(--sans);text-transform:uppercase;letter-spacing:.08em;transition:.25s}
+.nav-cta:hover{background:#324d58}
+.burger{display:none;border:0;background:var(--navy);color:white;width:43px;height:43px;font-size:23px;align-items:center;justify-content:center}
+.hero{background:var(--navy2);color:white;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1.08fr) minmax(0,.92fr);min-height:690px}
+.hero-copy{padding:clamp(72px,7vw,115px) clamp(35px,5.2vw,88px) 80px 0;position:relative;display:flex;flex-direction:column;justify-content:center;min-width:0}
+.hero-marker{display:flex;gap:15px;align-items:center;color:var(--gold2);font:800 10px var(--sans);letter-spacing:.2em;text-transform:uppercase}
+.hero-marker:before{content:"";height:1px;width:37px;background:var(--gold)}
+.hero h1{font:600 clamp(55px,5.5vw,91px)/1.085 var(--serif);letter-spacing:-.055em;margin:27px 0 25px}
+.hero h1 em{font-style:italic;color:var(--gold2);font-weight:500}
+.hero-lead{max-width:525px;color:#cbd7dc;font-size:15px;line-height:1.95;margin:0 0 37px}
+.hero-actions{display:flex;flex-wrap:wrap;align-items:center;gap:12px}
+.hero-foot{display:flex;align-items:center;gap:10px;color:#d0dce1;margin-top:57px;font-size:11px;letter-spacing:.025em}
+.hero-foot svg{width:20px;height:20px;color:var(--gold)}
+.hero-visual{position:relative;min-height:640px;overflow:hidden;background:#859099}
+.hero-visual img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0;filter:saturate(.82)}
+.hero-visual:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#0e202927,transparent 45%),linear-gradient(0deg,#0e20297d,transparent 48%)}
+.hero-vertical{position:absolute;right:25px;top:50px;writing-mode:vertical-rl;font:700 9px var(--sans);letter-spacing:.22em;text-transform:uppercase;color:#ffffffde;z-index:2}
+.hero-visual-note{position:absolute;z-index:2;bottom:40px;left:35px;display:flex;align-items:center;gap:17px;color:white}
+.hero-visual-note i{height:1px;width:35px;background:var(--gold);display:block}
+.hero-visual-note span{font:600 17px var(--serif);letter-spacing:.02em}
+.hero-serial{background:#f1d4a0;color:var(--navy);position:absolute;z-index:3;right:35px;bottom:34px;width:82px;height:82px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-direction:column;transform:rotate(12deg)}
+.hero-serial svg{width:29px;height:29px}
+.hero-serial small{font:800 8px var(--sans);text-transform:uppercase;letter-spacing:.06em;margin-top:4px}
+.stripe{background:#efe9de;border-bottom:1px solid #dfd8ca}
+.stripe-grid{display:grid;grid-template-columns:repeat(3,1fr)}
+.stripe-item{display:flex;align-items:center;gap:16px;padding:26px 27px;border-right:1px solid #dcd3c5}
+.stripe-item:first-child{padding-left:0}
+.stripe-item:last-child{border:0}
+.stripe-number{font:500 32px var(--serif);color:#b58b58}
+.stripe-item b{display:block;font:800 12px var(--sans);text-transform:uppercase;letter-spacing:.04em}
+.stripe-item span{display:block;color:#7c7c76;font-size:11px;margin-top:4px}
+.intro{background:var(--paper)}
+.intro-grid{display:grid;grid-template-columns:1.15fr .85fr;align-items:end;gap:clamp(30px,8vw,120px)}
+.intro-text .sec-title{max-width:760px}
+.intro-side{max-width:440px;padding-bottom:4px}
+.intro-side .copy{margin:15px 0 0}
+.decor-line{width:58px;height:2px;background:var(--gold);display:block}
+.services{background:var(--paper);padding-top:0}
+.service-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:17px}
+.service{background:#fff;overflow:hidden;border:1px solid #e5e3dd;transition:transform .35s,box-shadow .35s}
+.service:hover{transform:translateY(-7px);box-shadow:0 21px 45px #182d3b12}
+.service-image{height:265px;overflow:hidden;position:relative;background:#d9ddd6}
+.service-image img{height:100%;width:100%;object-fit:cover;transition:transform .55s;filter:saturate(.78)}
+.service:hover .service-image img{transform:scale(1.06)}
+.service-badge{position:absolute;top:18px;left:18px;background:#142a36;color:white;letter-spacing:.13em;text-transform:uppercase;font:800 9px var(--sans);padding:12px 14px}
+.service-body{min-height:238px;padding:28px 30px 34px;position:relative}
+.service-no{color:#ad8959;font:800 11px var(--sans);letter-spacing:.16em}
+.service h3{font:600 29px/1.24 var(--serif);letter-spacing:-.025em;margin:11px 0}
+.service p{font-size:13px;line-height:1.8;color:#758087;margin:0;max-width:320px}
+.service-arrow{position:absolute;right:24px;bottom:29px;color:#aa804b;font-size:23px}
+.band{background:var(--navy);color:white;overflow:hidden}
+.band-grid{display:grid;grid-template-columns:1.02fr .98fr;min-height:535px}
+.band-photo{position:relative;min-height:490px}
+.band-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:saturate(.8)}
+.band-photo:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,transparent 72%,#142a364a)}
+.band-content{display:flex;flex-direction:column;justify-content:center;padding:70px max(35px,calc((100vw - 1380px)/2)) 70px clamp(42px,7vw,105px)}
+.band-content .sec-title{max-width:600px}
+.band-content .sec-title em{color:var(--gold2)}
+.band-content .copy{color:#c2d0d6;max-width:495px;margin:24px 0 28px}
+.band-benefits{display:flex;flex-direction:column;gap:16px;margin:0 0 30px;padding:0;list-style:none}
+.band-benefits li{display:flex;align-items:center;gap:13px;font-size:13px;color:#e2e8e8}
+.band-benefits li:before{content:"✓";border:1px solid #c89b67;color:#f3cc94;width:24px;height:24px;border-radius:50%;display:grid;place-items:center;font-size:12px;flex:0 0 auto}
+.projects{background:#f7f5f0}
+.heading-flex{display:flex;align-items:end;justify-content:space-between;gap:35px;margin-bottom:43px}
+.heading-flex .sec-title{max-width:760px}
+.heading-flex .copy{max-width:360px}
+.project-grid{display:grid;grid-template-columns:1.14fr .86fr;grid-template-rows:240px 240px;gap:15px}
+.project{position:relative;overflow:hidden;background:#cdd2d2;color:#fff}
+.project:first-child{grid-row:span 2}
+.project img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0;transition:transform .6s;filter:saturate(.8)}
+.project:hover img{transform:scale(1.06)}
+.project:after{content:"";position:absolute;inset:28% 0 0;background:linear-gradient(0deg,#0b1e27de,transparent)}
+.project-caption{position:absolute;z-index:2;left:clamp(22px,3vw,40px);right:65px;bottom:clamp(22px,3vw,35px)}
+.project-caption span{color:#e9c68e;font:800 10px var(--sans);text-transform:uppercase;letter-spacing:.15em}
+.project-caption h3{font:600 clamp(22px,2.6vw,37px)/1.2 var(--serif);margin:11px 0 0;letter-spacing:-.025em}
+.project-arr{position:absolute;z-index:2;bottom:30px;right:27px;width:44px;height:44px;border:1px solid #ffffffa5;border-radius:50%;display:grid;place-items:center;font-size:20px}
+.project-note{color:#7e8688;font-size:11px;line-height:1.75;margin:18px 0 0}
+.process{background:var(--paper)}
+.process-top{display:grid;grid-template-columns:1fr .8fr;gap:45px;align-items:end}
+.process-top .copy{max-width:470px}
+.process-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));margin-top:60px;border-top:1px solid #d1d5d5}
+.process-step{padding:33px 25px 5px 0;border-right:1px solid #d1d5d5}
+.process-step:not(:first-child){padding-left:25px}
+.process-step:last-child{border:0}
+.process-step .num{font:italic 500 38px var(--serif);color:#be965f}
+.process-step h3{font:800 15px var(--sans);letter-spacing:-.025em;margin:20px 0 11px}
+.process-step p{font-size:13px;line-height:1.85;color:#7a8385;margin:0}
+.faq{background:#edeae3}
+.faq-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:8vw}
+.faq .sec-title{max-width:420px}
+.faq .copy{max-width:370px}
+.faq-list{border-top:1px solid #c9cbc5}
+.faq-item{border-bottom:1px solid #c9cbc5}
+.faq-item summary{display:flex;justify-content:space-between;gap:25px;padding:24px 0;align-items:center;cursor:pointer;font:800 14px/1.45 var(--sans);list-style:none}
+.faq-item summary::-webkit-details-marker{display:none}
+.faq-item summary:after{content:"+";font:400 27px var(--sans);color:#b1844d;flex:0 0 auto}
+.faq-item[open] summary:after{content:"−"}
+.faq-item p{color:#67767c;line-height:1.85;font-size:13px;padding:0 40px 26px 0;margin:0}
+.contact{background:var(--gold);padding:clamp(85px,8vw,130px) 0}
+.contact-grid{display:grid;grid-template-columns:1fr .93fr;gap:clamp(35px,7vw,100px);align-items:center}
+.contact .eyebrow{color:#665032}
+.contact .sec-title{font-size:clamp(43px,5.5vw,76px);color:#1b303c}
+.contact .sec-title em{color:#735431}
+.contact-lead{font-size:15px;line-height:1.85;color:#5a4d3b;max-width:450px;margin:26px 0}
+.contact-links{display:flex;flex-direction:column;gap:18px;margin-top:35px}
+.contact-links a{font:800 17px var(--sans);text-decoration:underline;text-underline-offset:6px;text-decoration-thickness:1px;color:#233744}
+.contact-links a:hover{text-decoration-thickness:2px}
+.contact-details{font-size:12px;line-height:1.7;color:#715836;margin-top:30px}
+.form{background:white;padding:clamp(25px,3vw,45px);box-shadow:0 24px 65px #4e38222b}
+.form h3{font:600 29px var(--serif);margin:0 0 9px;letter-spacing:-.035em}
+.form-intro{font-size:12px;color:#7c868a;line-height:1.75;margin:0 0 24px}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.form-grid label{display:block;font:800 10px var(--sans);text-transform:uppercase;letter-spacing:.06em;color:#53646a}
+.form-grid .wide{grid-column:span 2}
+.form input,.form select,.form textarea{border:1px solid #d6dddd;width:100%;display:block;min-height:46px;padding:12px;margin-top:8px;background:#fafbf9;border-radius:0;outline:none;font:500 13px var(--body);color:#1d333c}
+.form textarea{min-height:105px;resize:vertical}
+.form input:focus,.form select:focus,.form textarea:focus{border-color:#b58a53;box-shadow:0 0 0 2px #e9d1ad}
+.form .button{margin-top:23px;width:100%;border:0}
+.form small{font:400 11px/1.7 var(--body);color:#8c9496;display:block;margin-top:14px}
+.footer{background:var(--navy2);color:#dfe8e9;padding:65px 0 28px}
+.footer-main{display:flex;justify-content:space-between;align-items:start;gap:50px;padding-bottom:56px}
+.footer .brand{color:#fff}
+.footer .brand-text b{color:white}
+.footer-lead{max-width:390px;color:#a7bdc6;font-size:13px;line-height:1.9;margin-top:21px}
+.footer-nav{display:flex;gap:35px;flex-wrap:wrap;font:700 12px var(--sans)}
+.footer-nav a:hover{color:#f1d09b}
+.footer-bottom{border-top:1px solid #4a5b6280;padding-top:24px;display:flex;justify-content:space-between;align-items:start;gap:20px;font-size:11px;line-height:1.75;color:#9fb1ba}
+.footer-bottom p{margin:0;max-width:670px}
+.anim{opacity:0;transform:translateY(18px);transition:opacity .65s,transform .65s}
+.anim.on{opacity:1;transform:none}
+@media(max-width:1240px){.brand{min-width:200px}.navlinks{gap:16px}.nav-number{display:none}.service-body{padding:24px}.service h3{font-size:26px}.band-content{padding:60px 43px}.hero h1{font-size:clamp(54px,5.5vw,75px)}}
+@media(max-width:1060px){.navlinks{display:none;position:absolute;left:0;right:0;top:100%;background:#fff;padding:14px max(30px,5vw) 24px;flex-direction:column;align-items:stretch;box-shadow:0 20px 34px #1b2d3824;border-bottom:1px solid #deded8;gap:0}.navlinks.open{display:flex}.navlinks a{border-bottom:1px solid #ebe9e3;padding:15px 0}.burger{display:flex}.nav-cta{display:none}.hero-grid{grid-template-columns:minmax(0,1fr) minmax(0,.82fr)}.hero-copy{padding-right:25px}.hero h1{font-size:clamp(53px,6vw,73px)}.service-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.service:last-child{grid-column:span 2;display:grid;grid-template-columns:.8fr 1fr}.service:last-child .service-image{height:100%;min-height:270px}.service:last-child .service-body{align-self:center}.band-content{padding:50px 30px}.project-grid{grid-template-rows:225px 225px}}
+@media(max-width:760px){.container{width:calc(100% - 38px)}.nav{min-height:76px}.brand{min-width:0}.crown{width:42px;height:42px}.crown svg{width:25px}.brand-text b{font-size:18px}.brand-text small{font-size:7px}.hero-grid,.intro-grid,.process-top,.band-grid,.faq-grid,.contact-grid{grid-template-columns:minmax(0,1fr)}.hero-copy{padding:76px 0 60px}.hero h1{font-size:clamp(49px,10vw,68px)}.hero-lead{font-size:14px}.hero-foot{margin-top:37px}.hero-visual{min-height:360px;height:420px}.hero-visual-note{left:22px;bottom:28px}.hero-serial{right:23px;bottom:25px}.stripe-grid{grid-template-columns:1fr}.stripe-item,.stripe-item:first-child{padding:17px 0;border-right:0;border-bottom:1px solid #ded4c6}.stripe-item:last-child{border:0}.stripe-number{font-size:28px}.section{padding:75px 0}.intro{padding-bottom:37px}.intro-side{max-width:100%}.intro-side .copy{margin-top:10px}.services{padding-top:0}.service-grid{grid-template-columns:1fr 1fr;gap:10px}.service-image{height:195px}.service:last-child{grid-column:span 2}.service-body{padding:20px 18px 35px;min-height:0}.service h3{font-size:23px}.service p{font-size:12px}.service-arrow{bottom:12px;right:16px}.band-photo{min-height:360px}.band-content{padding:54px 20px 72px}.heading-flex{display:block}.heading-flex .copy{margin-top:24px}.project-grid{grid-template-columns:1fr 1fr;grid-template-rows:275px 210px}.project:first-child{grid-column:span 2;grid-row:auto}.project-caption{left:20px;right:38px;bottom:18px}.project-caption h3{font-size:22px}.project-arr{right:12px;bottom:12px;width:34px;height:34px}.process-grid{grid-template-columns:repeat(2,minmax(0,1fr));margin-top:34px}.process-step{border:0;border-top:1px solid #d1d5d5;padding:23px 14px 25px 0!important}.faq-grid{gap:40px}.contact-grid{gap:45px}.contact .sec-title{font-size:clamp(42px,9vw,62px)}.form{padding:27px}.footer-main,.footer-bottom{display:block}.footer-nav{margin-top:30px}.footer-bottom p{margin-top:14px}}
+@media(max-width:470px){.demo{font-size:8px;padding:8px}.brand-text b{font-size:17px}.hero h1{font-size:clamp(46px,11.8vw,57px)}.hero-marker{font-size:9px}.hero-actions{gap:10px}.hero-actions .button{min-height:46px;padding:13px 15px;font-size:9px}.hero-visual{height:330px;min-height:330px}.hero-serial{width:66px;height:66px}.hero-visual-note{font-size:12px;bottom:22px}.stripe-item b{font-size:11px}.service-grid{grid-template-columns:1fr}.service:last-child{grid-column:auto;display:block}.service:last-child .service-image{min-height:0;height:210px}.service-image{height:210px}.service-body{min-height:180px}.service h3{font-size:27px}.project-grid{grid-template-columns:1fr;grid-template-rows:270px 200px 200px}.project:first-child{grid-column:auto}.project-caption h3{font-size:23px}.process-grid{grid-template-columns:1fr}.process-step{padding:21px 0!important}.form-grid{grid-template-columns:1fr}.form-grid .wide{grid-column:auto}.footer-nav{gap:15px}.contact-links a{font-size:15px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.anim{opacity:1;transform:none}*,*:before,*:after{transition:none!important}}
+</style>
+</head>
+<body>
+<div class="demo">Proposition de refonte · Maquette non officielle · Informations et visuels à valider</div>
+<header class="header"><div class="container nav">
+  <a href="#accueil" class="brand" aria-label="Les Rois de la Réno, accueil">
+    <span class="crown" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none"><path d="M3 9l7.5 7 5.5-10 5.5 10L29 9l-3 15H6L3 9Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M7 28h18M6 23h20" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span>
+    <span class="brand-text"><b>LES ROIS<br>DE LA RÉNO</b><small>Rénovation &amp; énergie</small></span>
+  </a>
+  <nav id="menu" class="navlinks" aria-label="Navigation principale"><a href="#expertises">Expertises</a><a href="#accompagnement">Accompagnement</a><a href="#realisations">Réalisations</a><a href="#questions">Questions fréquentes</a><a href="#contact">Contact</a></nav>
+  <div class="nav-actions"><a class="nav-number" href="tel:+33768974298">07 68 97 42 98</a><a class="nav-cta" href="#contact">Demander un devis ↗</a><button type="button" class="burger" id="burger" aria-expanded="false" aria-controls="menu" aria-label="Ouvrir le menu">☰</button></div>
+</div></header>
+<main>
+<section class="hero" id="accueil"><div class="container hero-grid">
+  <div class="hero-copy">
+    <span class="hero-marker">Les Rois de la Réno · Drancy &amp; alentours</span>
+    <h1>Votre maison mérite <em>le meilleur.</em></h1>
+    <p class="hero-lead">Rénovation énergétique, isolation, pompe à chaleur ou transformation intérieure : donnez une nouvelle dimension à votre habitat avec un accompagnement pensé autour de vos besoins.</p>
+    <div class="hero-actions"><a href="#contact" class="button button-gold">Parlons de votre projet <span aria-hidden="true">↗</span></a><a href="#expertises" class="button button-outline">Nos prestations</a></div>
+    <div class="hero-foot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-6 8-13a8 8 0 0 0-16 0c0 7 8 13 8 13Z"/><circle cx="12" cy="9" r="3"/></svg> Drancy · Seine-Saint-Denis · Île-de-France</div>
+  </div>
+  <div class="hero-visual"><img fetchpriority="high" src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1500&q=85" alt="Intérieur architectural contemporain, matériaux nobles et grande luminosité">
+    <span class="hero-vertical">Rénover · Valoriser · Habiter</span>
+    <div class="hero-visual-note"><i></i><span>L'exigence du détail.</span></div>
+    <div class="hero-serial" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 9l7.5 7 5.5-10 5.5 10L29 9l-3 15H6L3 9ZM7 28h18"/></svg><small>La réno</small></div>
+  </div>
+</div></section>
+<div class="stripe"><div class="container stripe-grid">
+  <div class="stripe-item"><div class="stripe-number">01.</div><div><b>Énergie &amp; isolation</b><span>Améliorer durablement le confort</span></div></div>
+  <div class="stripe-item"><div class="stripe-number">02.</div><div><b>Rénovation intérieure</b><span>Transformer vos espaces de vie</span></div></div>
+  <div class="stripe-item"><div class="stripe-number">03.</div><div><b>Conseils &amp; accompagnement</b><span>Avancer avec des choix éclairés</span></div></div>
+</div></div>
+<section class="intro section" id="expertises"><div class="container intro-grid">
+  <div class="intro-text anim"><span class="eyebrow" style="color:#b58c59">01 / Notre savoir-faire</span><h2 class="sec-title">Votre projet, notre <em>exigence.</em></h2></div>
+  <div class="intro-side anim"><span class="decor-line"></span><p class="copy">Un lieu de vie plus agréable, une maison mieux isolée, une salle de bain repensée… Nous rassemblons plusieurs métiers pour donner forme à vos envies, du conseil aux finitions.</p></div>
+</div></section>
+<section class="services section"><div class="container"><div class="service-grid">
+  <a class="service anim" href="#contact"><div class="service-image"><img loading="lazy" src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=950&q=85" alt="Maison contemporaine avec façade rénovée"><span class="service-badge">Énergie</span></div><div class="service-body"><span class="service-no">01 / PERFORMANCE</span><h3>Isolation thermique</h3><p>Murs, combles et amélioration de l'enveloppe du bâtiment, pour un intérieur plus confortable.</p><span class="service-arrow">↗</span></div></a>
+  <a class="service anim" href="#contact"><div class="service-image"><img loading="lazy" src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&w=950&q=85" alt="Architecture d'une habitation lumineuse"><span class="service-badge">Chauffage &amp; ventilation</span></div><div class="service-body"><span class="service-no">02 / CONFORT</span><h3>Pompes à chaleur &amp; VMC</h3><p>Des équipements de chauffage et de ventilation adaptés à votre habitat et à vos usages.</p><span class="service-arrow">↗</span></div></a>
+  <a class="service anim" href="#contact"><div class="service-image"><img loading="lazy" src="https://images.unsplash.com/photo-1620626011761-996317b8d101?auto=format&fit=crop&w=950&q=85" alt="Salle de bain moderne aux matériaux clairs"><span class="service-badge">Intérieur</span></div><div class="service-body"><span class="service-no">03 / RENOUVEAU</span><h3>Rénovation intérieure</h3><p>Salles de bain, sols, peinture, électricité et plomberie : les détails qui changent tout.</p><span class="service-arrow">↗</span></div></a>
+</div></div></section>
+<section class="band" id="accompagnement"><div class="band-grid">
+  <div class="band-photo"><img loading="lazy" src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1500&q=85" alt="Pièce de vie contemporaine baignée de lumière"></div>
+  <div class="band-content anim"><span class="eyebrow" style="color:var(--gold2)">02 / Rénovation énergétique</span><h2 class="sec-title">Mieux habiter.<br><em>Mieux consommer.</em></h2><p class="copy">Une rénovation énergétique réussie commence par une vision d'ensemble. Isolation, chauffage, ventilation : chaque intervention se réfléchit selon les caractéristiques de votre logement.</p><ul class="band-benefits"><li>Étudier votre projet et vos priorités</li><li>Choisir des solutions adaptées à votre maison</li><li>Comprendre les aides auxquelles vous pourriez être éligible</li></ul><a href="#contact" class="button button-gold">Étudier mon projet <span>↗</span></a></div>
+</div></section>
+<section class="projects section" id="realisations"><div class="container">
+  <div class="heading-flex anim"><div><span class="eyebrow" style="color:#af8451">03 / Quelques projets</span><h2 class="sec-title">Des espaces repensés.<br><em>Des envies concrétisées.</em></h2></div><p class="copy">Une sélection de projets mentionnés sur le site existant de l'entreprise, présentée dans un univers visuel plus contemporain.</p></div>
+  <div class="project-grid">
+    <a class="project" href="https://lesroisdelareno.fr/fr/renovation-sdb-idf/salle-de-bain-accessible-confort-senior-paris-11" target="_blank" rel="noopener noreferrer"><img loading="lazy" src="https://images.unsplash.com/photo-1620626011761-996317b8d101?auto=format&fit=crop&w=1500&q=85" alt="Photo illustrative d'une salle de bain contemporaine"><div class="project-caption"><span>Projet présenté sur leur site · Paris 11e</span><h3>Salle de bain accessible<br>et confort senior</h3></div><span class="project-arr">↗</span></a>
+    <a class="project" href="https://lesroisdelareno.fr/fr/renovation-sdb-idf/renovation-salle-de-bain-contemporaine-paris-08" target="_blank" rel="noopener noreferrer"><img loading="lazy" src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1100&q=85" alt="Photo illustrative d'un intérieur rénové"><div class="project-caption"><span>Projet présenté sur leur site · Paris 8e</span><h3>Salle de bain contemporaine</h3></div><span class="project-arr">↗</span></a>
+    <a class="project" href="https://lesroisdelareno.fr/fr/renovation-globale/renovation-globale-vincennes-94300" target="_blank" rel="noopener noreferrer"><img loading="lazy" src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1100&q=85" alt="Photo illustrative de l'extérieur d'une maison rénovée"><div class="project-caption"><span>Projet présenté sur leur site · Vincennes</span><h3>Rénovation globale</h3></div><span class="project-arr">↗</span></a>
+  </div>
+  <p class="project-note">Les intitulés sont repris du site actuel. Les photographies sont des images d'ambiance, et ne représentent pas les chantiers de l'entreprise. Les liens ouvrent les projets sur le site existant.</p>
+</div></section>
+<section class="process section" id="methode"><div class="container">
+  <div class="process-top anim"><div><span class="eyebrow" style="color:#af8451">04 / Votre parcours</span><h2 class="sec-title">Un projet clair.<br><em>À chaque étape.</em></h2></div><p class="copy">Vous avancez avec des échanges concrets, des choix adaptés à votre budget et un accompagnement qui donne de la visibilité aux prochaines étapes.</p></div>
+  <div class="process-grid"><div class="process-step"><span class="num">01.</span><h3>On échange</h3><p>Vous décrivez vos besoins, votre logement et vos objectifs.</p></div><div class="process-step"><span class="num">02.</span><h3>On étudie</h3><p>Les interventions sont définies et un devis personnalisé est établi.</p></div><div class="process-step"><span class="num">03.</span><h3>On réalise</h3><p>Le chantier est organisé et suivi selon les travaux convenus.</p></div><div class="process-step"><span class="num">04.</span><h3>On profite</h3><p>Vous retrouvez un espace plus confortable et adapté à votre quotidien.</p></div></div>
+</div></section>
+<section class="faq section" id="questions"><div class="container faq-grid">
+  <div class="anim"><span class="eyebrow" style="color:#ad804b">05 / Vos questions</span><h2 class="sec-title">Les bonnes questions, <em>les bonnes réponses.</em></h2><p class="copy">Des réponses simples pour aborder votre projet de rénovation avec confiance.</p></div>
+  <div class="faq-list">
+    <details class="faq-item"><summary>Quels travaux réalisez-vous ?</summary><p>Le site actuel de Les Rois de la Réno présente notamment l'isolation thermique, les pompes à chaleur, la ventilation, ainsi que les travaux intérieurs : salles de bain, plomberie, électricité, peinture et revêtements.</p></details>
+    <details class="faq-item"><summary>Peut-on être accompagné pour les aides financières ?</summary><p>L'entreprise présente un accompagnement pour les dispositifs de rénovation énergétique. L'accès à MaPrimeRénov', aux CEE ou à d'autres aides dépend du type de logement, de votre situation et des règles en vigueur. Les conditions doivent être vérifiées pour chaque dossier.</p></details>
+    <details class="faq-item"><summary>Dans quelles villes intervenez-vous ?</summary><p>L'entreprise se présente comme basée à Drancy et intervenant également dans les environs, notamment Bobigny, Le Blanc-Mesnil, La Courneuve, Aulnay-sous-Bois et Bondy. Contactez-la pour vérifier votre commune.</p></details>
+    <details class="faq-item"><summary>Comment obtenir un devis ?</summary><p>Vous pouvez joindre directement Les Rois de la Réno au 07 68 97 42 98 ou préparer un message depuis cette maquette. Pour une demande officielle, contactez directement l'entreprise.</p></details>
+  </div>
+</div></section>
+<section class="contact" id="contact"><div class="container contact-grid">
+  <div class="anim"><span class="eyebrow">06 / On en parle ?</span><h2 class="sec-title">Votre prochain chapitre commence <em>ici.</em></h2><p class="contact-lead">Une maison à isoler, une salle de bain à refaire ou un projet de rénovation plus global ? Échangeons sur vos idées.</p>
+    <div class="contact-links"><a href="tel:+33768974298">07 68 97 42 98 ↗</a><a href="mailto:lesroisdelareno@yahoo.com">lesroisdelareno@yahoo.com ↗</a></div><div class="contact-details">147 rue Anatole France, 93700 Drancy<br>Du lundi au vendredi · 9 h – 17 h <br><small>Coordonnées et horaires repris du site actuel, à confirmer.</small></div>
+  </div>
+  <form class="form anim" id="contact-form" aria-label="Préparer une demande de devis"><h3>Parlez-nous de votre projet</h3><p class="form-intro">Remplissez ce formulaire : il ouvrira votre messagerie avec un e-mail prérempli. Aucun envoi automatique depuis cette maquette.</p>
+    <div class="form-grid">
+      <label>Votre nom<input type="text" name="nom" required maxlength="90" placeholder="Nom et prénom" autocomplete="name"></label>
+      <label>Votre e-mail<input type="email" name="email" required maxlength="120" placeholder="vous@exemple.fr" autocomplete="email"></label>
+      <label>Votre ville<input type="text" name="ville" maxlength="90" placeholder="Drancy, Bobigny…" autocomplete="address-level2"></label>
+      <label>Type de travaux<select name="prestation" required><option value="">Choisissez une prestation</option><option>Isolation thermique</option><option>Pompe à chaleur / Chauffage</option><option>Ventilation / VMC</option><option>Rénovation de salle de bain</option><option>Rénovation intérieure</option><option>Rénovation globale</option><option>Autre projet</option></select></label>
+      <label class="wide">Votre demande<textarea name="message" required maxlength="1200" placeholder="Précisez les travaux envisagés et votre besoin…" rows="4"></textarea></label>
+    </div>
+    <button class="button button-gold" type="submit">Préparer ma demande par e-mail <span>↗</span></button>
+    <small>Maquette de prospection non officielle : ce formulaire ne stocke aucune information et n'envoie aucun message directement. Une version finale pourra être reliée au service de messagerie du client.</small>
+  </form>
+</div></section>
+</main>
+<footer class="footer"><div class="container">
+  <div class="footer-main"><div><a href="#accueil" class="brand"><span class="crown" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none"><path d="M3 9l7.5 7 5.5-10 5.5 10L29 9l-3 15H6L3 9ZM7 28h18" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></span><span class="brand-text"><b>LES ROIS<br>DE LA RÉNO</b><small>Rénovation &amp; énergie</small></span></a><p class="footer-lead">Une autre façon de présenter la rénovation : claire, ambitieuse et centrée sur votre projet. Drancy et Île-de-France.</p></div><nav class="footer-nav" aria-label="Pied de page"><a href="#expertises">Expertises</a><a href="#accompagnement">Énergie</a><a href="#realisations">Projets</a><a href="#questions">FAQ</a><a href="#contact">Contact</a></nav></div>
+  <div class="footer-bottom"><span>© <span id="year">2026</span> Les Rois de la Réno · Concept vitrine</span><p>Maquette de refonte non officielle destinée à la présentation commerciale. Aucun accord de l'entreprise n'est présumé. Photos d'illustration Unsplash, hors chantiers réels. Services, certifications, aides et données à valider avant toute publication définitive.</p></div>
+</div></footer>
+<script>
+(function(){
+  const nav=document.getElementById('menu'),burger=document.getElementById('burger');
+  burger.addEventListener('click',()=>{const v=nav.classList.toggle('open');burger.setAttribute('aria-expanded',String(v));burger.setAttribute('aria-label',v?'Fermer le menu':'Ouvrir le menu');burger.textContent=v?'×':'☰'});
+  nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');burger.setAttribute('aria-expanded','false');burger.setAttribute('aria-label','Ouvrir le menu');burger.textContent='☰'}));
+  document.getElementById('year').textContent=new Date().getFullYear();
+  if('IntersectionObserver' in window&&!(matchMedia('(prefers-reduced-motion: reduce)').matches)){
+    const obs=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');obs.unobserve(e.target)}}),{threshold:.07});
+    document.querySelectorAll('.anim').forEach(el=>obs.observe(el));
+  }else{document.querySelectorAll('.anim').forEach(el=>el.classList.add('on'))}
+  document.getElementById('contact-form').addEventListener('submit',function(e){
+    e.preventDefault();if(!this.reportValidity())return;
+    const d=new FormData(this);
+    const subject='Demande de renseignements — '+d.get('prestation');
+    const body=['Bonjour Les Rois de la Réno,','','Je vous contacte au sujet de travaux.','','Nom : '+d.get('nom'),'E-mail : '+d.get('email'),'Ville : '+d.get('ville'),'Prestation : '+d.get('prestation'),'','Description du projet :',d.get('message'),'','Merci de me recontacter.'].join('\n');
+    window.location.href='mailto:lesroisdelareno@yahoo.com?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body);
+  });
+})();
+</script>
+</body></html>
